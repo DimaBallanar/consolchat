@@ -4,7 +4,14 @@ var textFromReadLine = Console.ReadLine();
 Console.WriteLine($"Hello, {textFromReadLine}");
 Console.Write("HOW old are you? ");
 int age = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"ничего себе ,тебе {age}");
+if(age < 30)
+{
+    Console.WriteLine($"{age} ?-самое время для изучения");
+}
+else
+{
+    Console.WriteLine($"{age} ? знаешь,никогда не поздно начинать");
+}
 Console.Write("как думаешь,через сколько месяцев ты освоишь язык C#?: ");
 int month = Convert.ToInt32(Console.ReadLine());
 if (month < 6)
